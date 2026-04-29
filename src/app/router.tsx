@@ -6,6 +6,7 @@ import Employees from '@/features/Employees/Employees';
 import EmployeeDetail from '@/features/Employees/EmployeeDetail';
 import Settings from '@/features/Settings/Settings';
 import { Integrations } from '@/features/Integrations';
+import Terminal from '@/features/Terminal';
 import Login from '@features/Login';
 import Signup from '@features/Signup';
 import ResetPassword from '@features/ResetPassword';
@@ -65,6 +66,10 @@ export const createRouter = () =>
                         {
                             path: "/integrations",
                             element: <Integrations />,
+                        },
+                        {
+                            path: "/terminal",
+                            element: <Terminal />,
                         }
                     ],
                 }
