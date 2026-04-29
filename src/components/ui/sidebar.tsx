@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  Users, 
-  Settings, 
-  LogOut, 
+import {
+  Users,
+  Settings,
+  LogOut,
   X,
   Loader2,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  TerminalSquare
 } from "lucide-react";
 import { Button } from "./button";
 import Logo from "./logo";
@@ -31,6 +32,12 @@ export default function Sidebar({ isOpen, onToggle, isCollapsed = false, onToggl
       href: "/employees",
       icon: Users,
       current: location.pathname === "/employees"
+    },
+    {
+      name: "Terminal",
+      href: "/terminal",
+      icon: TerminalSquare,
+      current: location.pathname === "/terminal"
     },
     {
       name: "Configurações",
